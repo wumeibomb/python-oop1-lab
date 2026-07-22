@@ -16,10 +16,10 @@ class TestCoffee:
 
     def test_requires_specific_size(self):
         '''prints "size must be Small, Medium, or Large" if size is not an one of those options.'''
-        latte = Coffee(size = "Large", price = 2.50)
+        latte = Coffee(size = "not a size", price = 2.50)
         captured_out = io.StringIO()
         sys.stdout = captured_out
-        latte.size = "not an size"
+        latte.size = "not a size"
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "size must be Small, Medium, or Large\n")
 

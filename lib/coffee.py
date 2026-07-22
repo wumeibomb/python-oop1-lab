@@ -5,7 +5,7 @@ class Coffee:
         self.size = size
         self.price = price
 
-        if size == "Small" or size == "Medium" or size == "Large":
+        if size in ('Small', "Medium", "Large"):
             pass
         else:
             print("size must be Small, Medium or Large")

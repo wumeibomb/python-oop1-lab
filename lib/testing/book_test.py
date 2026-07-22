@@ -16,7 +16,7 @@ class TestBook:
 
     def test_requires_int_page_count(self):
         '''prints "page_count must be an integer" if page_count is not an integer.'''
-        book = Book("And Then There Were None", 272)
+        book = Book("And Then There Were None", "not an integer")
         captured_out = io.StringIO()
         sys.stdout = captured_out
         book.page_count = "not an integer"
