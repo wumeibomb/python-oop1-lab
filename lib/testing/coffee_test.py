@@ -21,7 +21,7 @@ class TestCoffee:
         sys.stdout = captured_out
         latte.size = "not an size"
         sys.stdout = sys.__stdout__
-        assert captured_out.getvalue() == "size must be Small, Medium, or Large\n"
+        assert(captured_out.getvalue() == "size must be Small, Medium, or Large\n")
 
     def test_can_tip(self):
         '''says that the shoe has been repaired.'''

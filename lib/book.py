@@ -5,10 +5,10 @@ class Book:
         self.title = title
         self.page_count = page_count
 
-        if not isinstance(page_count, int):
+        if not isinstance(self.page_count, int):
             print("page_count must be an integer")
-        else: 
-            print(title, page_count)
+        
+
     def turn_page(self):
         print('Flipping the page...wow, you read fast!')
 
