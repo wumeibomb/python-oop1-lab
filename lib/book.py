@@ -12,6 +12,5 @@ class Book:
     def turn_page(self):
         print('Flipping the page...wow, you read fast!')
 
-book = Book(input("Book name? "), input("Page Count? "))
 
         
